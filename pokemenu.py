@@ -8,7 +8,7 @@ def menu():
       print(" 3 - Atualizar informações de um Pokémon existente na Pokedex")
       print(" 4 - Excluir Pokémon da Pokedex")
       print(" 5 - Consultar Pokémon na Pokedéx")
-      print(" 7 - Salvar e Sair")
+      print(" 6 - Salvar e Sair")
 
       opcao = int(input("Digite a sua opção:"))
 
@@ -19,31 +19,16 @@ def menu():
           pokefunc.listar_pokemon()
 
       elif opcao == 3:
-          print("Olá")
+          print("FALTA PROGRAMAR ESSA PARTE")
 
       elif opcao == 4:
-          print("Olá")
+          print("FALTA PROGRAMAR ESSA PARTE")
 
-      elif opcao == 5:
-            pesquisar_poke = str(input('Você quer pesquisar pelo NOME ou TIPO do Pokemón?\n')).upper()
-
-            if pesquisar_poke == 'NOME':
-                nome_poke = str(input('Digite o NOME do Pokemon que deseja pesquisar: '))
-                pokefunc.pesquisar_pokemon_nome(nome_poke)
-            elif pesquisar_poke == 'TIPO':
-                tipo_poke = int(input('Digite o NOME do Pokemon que deseja pesquisar: '))
-                pokefunc.pesquisar_pokemon_tipo(tipo_poke)
-            else:
-                print(f'Essa opção não é aceita!')
+      elif opcao == 5: 
+        print('FALTA PROGRAMAR ESSA PARTE')
 
       elif opcao == 6:
-          print("Olá")
-
-      elif opcao == 7:
-          print("Olá")
-
-      elif opcao == 8:
-          print("Olá")
-
+          print("FALTA PROGRAMAR ESSA PARTE")
+          
       else:
           print("Opção inválida \n")
