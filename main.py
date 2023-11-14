@@ -1,0 +1,3 @@
+import pokemenu
+
+pokemenu.menu()
