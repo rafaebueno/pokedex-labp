@@ -22,10 +22,12 @@ def menu():
           print("FALTA PROGRAMAR ESSA PARTE")
 
       elif opcao == 4:
-          print("FALTA PROGRAMAR ESSA PARTE")
+          PokemonExcluir = int(input('Digite o ID do Pokemón que deseja excluir: '))
+          pokefunc.excluir_pokemon(PokemonExcluir)
 
       elif opcao == 5: 
-        print('FALTA PROGRAMAR ESSA PARTE')
+          idPesquisa = int(input('Digite o ID do Pokemón a ser pesquisado: '))
+          pokefunc.pesquisaPokemon(idPesquisa)
 
       elif opcao == 6:
           print("FALTA PROGRAMAR ESSA PARTE")
