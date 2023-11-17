@@ -6,15 +6,15 @@ def AddPoke():
     pokemon_Nome = str(input('Digite o nome do Pokemon: ')).upper()
     tipo_Pokemon = str(input('Digite o tipo do Pokemon: ')).upper()
     nivel_Pokemon = int(input('Digite o nível do Pokemon: '))
-    pokedex = [{
+    pokemon = {
       'id': identificacao, 
       'nome': pokemon_Nome, 
       'tipo': tipo_Pokemon, 
-      'nivel': nivel_Pokemon}]
+      'nivel': nivel_Pokemon}
+    pokedex.append(pokemon)
     escolha_input = input('Deseja adicionar outro Pokemon?\nSIM/NÃO: ').upper()
     escolha = escolha_input
   return pokedex
-
 
 def listar_pokemon():
     for c in range(0, len(pokedex)):
