@@ -1,7 +1,13 @@
 import pokefunc
 
+arquivo = "pokedex.txt"
+pokedex = {}
+pokefunc.criar_registro(arquivo)
+pokedex = pokefunc.importar_pokedex('pokedex.txt')
+pokedex = pokefunc.importar_pokedex(arquivo)
 
 def menu():
+
   while (1):
     print("-- Menu Inicial --")
     print(" 1 - Adicionar um novo Pokémon")
@@ -21,7 +27,9 @@ def menu():
     elif opcao == 2:
         pokefunc.listar_pokemon()
 
+
     elif opcao == 3:
+        pokefunc.listar_pokemon()
         id = int(input('Digite o ID do Pokemón à ser atualizado: '))
         nome = str(input('Qual o nome à ser substituído? ')).upper()
         tipo = str(input('Qual o tipo do Pokemón? ')).upper()
@@ -43,11 +51,17 @@ def menu():
         tipo = str(input('Digite o Tipo do Pokemón a ser pesquisado: ')).upper()
         pokefunc.pesquisaPokemonTipo(tipo)
     
-    elif opcao == 7: 
+    elif opcao == 7:
         pokefunc.contarPokemon()
 
     elif opcao == 8:
-        pokefunc.salvar_pokedex('pokedex')   
+        pokefunc.apagar_salvamento_antigo()
+        pokefunc.criar_registro(arquivo)
+        pokefunc.listar_registros(arquivo)
 
+
+        break
+    elif opcao == 9:
+        print(pokedex)
     else:
-        print("FALTA PROGRAMAR ESSA PARTE")
+        print("Opção inválida. Tente novamente.")
